@@ -23,7 +23,7 @@ const data = computed(() => {
 
   let days = 0;
   let amount = form.amount;
-  while (days <= form.days) {
+  while (days < form.days) {
     // get 3 percent of the amount
     const startAmount = amount;
     let interest = amount * percentageInterest.value;
@@ -84,7 +84,7 @@ const data = computed(() => {
                 </tr>
               </thead>
               <tbody>
-                <template v-for="(item, index) in data">
+                <template v-for="(item, index) in data" :key="index">
                   <tr>
                     <td class="font-bold">{{ item.day }}.</td>
                     <td>{{ naira }} {{ item.balance.toLocaleString() }}</td>
