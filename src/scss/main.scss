@@ -1,0 +1,42 @@
+table.table {
+  @apply min-w-full divide-y divide-gray-200;
+
+  tbody {
+    @apply bg-white divide-y divide-gray-200
+  }
+
+  thead > tr > th {
+    @apply px-3 py-3 bg-gray-100 text-left text-sm font-bold text-gray-700 tracking-wider;
+  }
+
+  tbody > tr {
+    @apply hover:bg-gray-50;
+
+    & > td {
+      @apply px-3 py-2 whitespace-nowrap text-sm text-gray-600;
+
+      a {
+        @apply font-medium;
+        &:hover {
+          @apply font-bold;
+        }
+      }
+    }
+  }
+}
+
+.table-container {
+  @apply overflow-x-auto;
+
+  &:not(.-curves) {
+    @apply md:rounded-lg
+  }
+
+  &:not(.-shadow) {
+    @apply shadow-sm
+  }
+
+  &:not(.-border) {
+    @apply border border-gray-200;
+  }
+}

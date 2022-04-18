@@ -1,0 +1,28 @@
+{
+  "name": "vue-vite-typescript-tailwindcss",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite --host --port 6316",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "sass": "^1.50.0",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/tailwindcss": "^3.0.9",
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vue/compiler-sfc": "^3.2.31",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.1",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.3",
+    "vite": "^2.8.6",
+    "vite-plugin-ejs": "^1.4.4",
+    "vue-tsc": "^0.33.9"
+  }
+}
