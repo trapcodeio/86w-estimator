@@ -52,6 +52,10 @@ const data = computed(() => {
   <div class="container mx-auto mt-10">
     <h1 class="text-3xl font-bold text-center text-red-800">86w Estimator</h1>
 
+    <p class="text-sm text-center text-gray-500">
+      <b>NOTE:</b> This estimator assumes that you place bets with all your capital daily.
+    </p>
+
     <div class="flex mt-5 lg:mt-10">
       <div class="w-full max-w-2xl mx-auto">
         <form
